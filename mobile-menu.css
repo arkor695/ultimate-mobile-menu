@@ -1,6 +1,6 @@
 body {
   max-width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -259,11 +259,13 @@ ul {
     top: -10px;
     z-index: 2;
     background: none;
-    font-size: 70px;
   }
   .hidden .toggle-mobile:before{
     left: -90px;
     top: 10px;
+  }
+  .wrap .mobile-menu h4 {
+    margin-top: 50px;
   }
   .box-wrap {
     width: 100%;
