@@ -259,18 +259,19 @@ ul {
     top: -10px;
     z-index: 2;
     background: none;
+    padding-top: 6px;
   }
   .hidden .toggle-mobile:before{
     left: -90px;
     top: 10px;
   }
-  .wrap .mobile-menu h4 {
-    margin-top: 50px;
-  }
   .box-wrap {
     width: 100%;
     max-width: 497px;
   }
+  .wrap .mobile-menu h4 {
+  margin-top: 50px;
+}
   
   .wrap nav {
     margin-top: 0;
