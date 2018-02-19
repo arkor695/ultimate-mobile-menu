@@ -13,46 +13,72 @@ Try out a working example on [JSFiddle](https://jsfiddle.net/solodev/5pyq6L99/14
 The tutorial contains the following basic HTML markup.
 
 ```
-<div class="container">
-  <div class="row mt-5">
-	  <div class="col-sm-12">
-		  <p class="text-center">
-		    <a href="https://www.solodev.com" class="btn btn-info btn-lg cta-open">External Link</a> <a href="#" class="btn btn-info btn-lg cta-open">Internal Link</a>
-		  </p>
-	  </div>
-  </div>
-</div>
-
-<!-- start modal-->
-<div class="modal fade" id="speedbump" role="dialog">
-	<div class="modal-dialog">
-	  <!-- Modal content-->
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <button type="button" class="close" data-dismiss="modal">&times;</button>
-		  <h4 class="modal-title">Notice</h4>
-		</div>
-		<div class="modal-body">
-		  <p>You are now leaving the our website website.</p>
-		</div>
-		<div class="modal-footer text-center">
-		  <button type="button" title="continue" class="btn btn-modal btn-continue" data-dismiss="modal">Continue</button>
-		  <button type="button" title="go back" class="btn btn-modal btn-close" data-dismiss="modal">Go Back</button>
-		</div>
-	  </div>
-
-	</div>
-</div>
-<!--end modal-->
+ <div class="navigation">
+                <img src="https://www.solodev.com/_/images/solodev-logo-white.png">
+            </div>
+            <div id="overlay" class="overlay hidden" role="navigation" data-ps-id="0bc2bd66-545d-d7f1-3fdc-e0a9b0992c40">
+                <div class="wrap box-wrap">
+                  <div class="mobileNav black;">            <div class="box-close box-toggle open2">
+                      <a href="#" class="toggle-mobile" aria-label="Menu Toggle">×</a>
+                    </div>
+                    <div class="box-mobile-menu mobile-menu">
+                      <div class="row">
+                        <div class="col">
+                          <h4><a href="/">Home</a></h4>
+                          <ul>
+                            <li><a href="https://www.solodev.com/product/create.stml">Product</a></li>
+                            <li><a href="https://www.solodev.com/pricing/">Pricing</a></li>
+                            <li><a href="https://www.solodev.com/resources/">Resources</a></li>
+                            <li><a href="https://www.solodev.com/customers/">Customers</a></li>
+                            <li><a href="https://www.solodev.com/blog/">Blog</a></li>
+                          </ul>
+                        </div>
+                        <div class="col">
+                          <h4><a href="/about/">About</a></h4>
+                          <ul>
+                            <li><a href="https://www.solodev.com/product/host.stml">Hosting</a></li>
+                            <li><a href="https://www.solodev.com/product/support.stml">Support</a></li>
+                            <li><a href="/about/partners.stml">Partners</a></li>
+                            <li><a href="https://www.solodev.com/careers/">Careers</a></li>
+                            <li><a href="https://www.solodev.com/contact/">Contact Us</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div><!--.mobile-menu-->
+                  <form class="search-form hidden-xs" action="/search/">
+                      <label for="searchBox" class="sr-only">Search</label>              
+                      <input id="searchBox" name="q" type="search">
+                      <button class="submit" type="submit" value="" aria-label="Search"><i class="fa fa-search" aria-hidden="true">&nbsp;</i></button>
+                    </form>
+                    <div class="box-social text-center">
+                      <ul>
+                        <li><a href="https://www.facebook.com/Solodev" aria-label="Facebook"><i class="fab fa-facebook-f text-white" aria-hidden="true">&nbsp;</i></a></li>
+                        <li><a href="https://www.linkedin.com/company/solodev" aria-label="LinkedIn" class="fab fa-linkedin-in text-white"></a></li>
+                        <li><a href="https://twitter.com/solodev?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" aria-label="Twitter"><i class="fab fa-twitter text-white" aria-hidden="true">&nbsp;</i></a></li>
+                        <li><a href="https://medium.com/@solodev" aria-label="Medium"><i class="fab fa-medium-m text-white" aria-hidden="true">&nbsp;</i></a></li>
+                        <li><a href="https://github.com/solodev" aria-label="Github"><i class="fab fa-github text-white" aria-hidden="true">&nbsp;</i></a></li>
+                      </ul>
+                    </div><!--.box-social-->
+                    <div class="box-addres">
+                       <p> <img src="https://www.solodev.com/_/images/solodev-logo-stacked.png" class="mx-auto d-block right-nav-logo"></p>
+                      <ul class="row">
+                      <li class="col-md-12 text-center">
+                          800 N. Magnolia Ave, Suite 1400<br>Orlando, FL 32803<br>Phone: 800.859.7656<br><a href="mailto:info@solodev.com">info@solodev.com</a>
+                      </li>
+                      </ul>
+                    </div><!--.box-addres-->
+                  </div>
+                </div>
+              <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
 ```
 
 ## CSS
 
-All required CSS is contained with external-popup.css
+All required CSS is contained with mobile-menu.css
 
 ## JavaScript
 
-All required JS is contained with external-popup.js
+All required JS is contained with mobile-menu.js
 
 ## External Resources
 
