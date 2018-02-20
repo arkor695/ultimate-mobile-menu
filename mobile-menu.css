@@ -30,6 +30,7 @@ ul {
   right: 0;
   transform: translateX(0);
   transition: transform .35s ease-in-out;
+  height: 100%;
 }
 
 .overlay.hidden {
